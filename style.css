@@ -1,0 +1,163 @@
+html, body {
+  font-family: Open Sans, Lucida Grande, Helvetica Neue, Helvetica, Arial, Sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  counter-reset: num_list;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+header {
+  width: 100vw;
+  height: 60px;
+  background-color: #222;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header div {
+  width: 104px;
+  height: 40px;
+  background-image: url("https://www.last.fm/static/images/logo_static_mob.0798d7258e3d.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#seccionLista {
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#seccionLista .fa-play-circle::before {
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#seccionLista li {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+}
+#seccionLista li .group_name {
+  margin-right: 2rem;
+}
+#seccionLista li .song-title {
+  margin-left: 2rem;
+  font-weight: bolder;
+}
+#seccionLista li .listeners::after {
+  content: " Listeners";
+}
+#seccionLista li a, #seccionLista li div {
+  font-family: Open Sans, Lucida Grande, Helvetica Neue, Helvetica, Arial, Sans-serif;
+}
+#seccionLista li :first-child::before {
+  counter-increment: num_list;
+  content: counter(num_list) ". ";
+}
+#seccionLista li :last-child {
+  font-size: medium;
+  font-weight: lighter;
+  margin-left: auto;
+  margin-right: 10px;
+}
+#seccionLista li:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+#generos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#generos div {
+  width: 120px;
+  height: 120px;
+  margin: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 120px;
+}
+#generos div:nth-of-type(1) {
+  background: url(https://lastfm.freetls.fastly.net/i/u/avatar300s/366962d5733a4aee8bee4a136c239d47.jpg) no-repeat;
+  background-size: contain;
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+}
+#generos div:nth-of-type(2) {
+  background: url("https://lastfm.freetls.fastly.net/i/u/avatar300s/51810a59cb17449bb2d6b8b62d63ce78.jpg") no-repeat;
+  background-size: contain;
+  filter: contrast(200%);
+  -webkit-filter: contrast(200%);
+}
+#generos div:nth-of-type(3) {
+  background: url("https://lastfm.freetls.fastly.net/i/u/avatar300s/c825233e09af4641a5ce7b6ece883aae.jpg") no-repeat;
+  background-size: contain;
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+}
+#generos div:nth-of-type(4) {
+  background: url("https://lastfm.freetls.fastly.net/i/u/avatar300s/c0a9af93c8c843afb43cd6dc24b0bbf3.jpg") no-repeat;
+  background-size: contain;
+  filter: hue-rotate(90deg);
+  -webkit-filter: hue-rotate(90deg);
+}
+#generos div:nth-of-type(5) {
+  background: url("https://lastfm.freetls.fastly.net/i/u/avatar300s/94428d295a60403e9327cbfb86e2fbf6.jpg") no-repeat;
+  background-size: contain;
+  filter: saturate(10%);
+  -webkit-filter: saturate(10%);
+}
+
+#ranking {
+  width: 100vw;
+  height: 35px;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+#ranking a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+#seccion {
+  width: 98%;
+  height: auto;
+  position: relative;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */
