@@ -140,7 +140,7 @@ const init = ()=>{
     let overRank = document.getElementById("OverRank");
     let titulo = document.getElementById("seccion");
 
-    loadJSON('./music.JSON').then(data => {
+    loadJSON('https://github.com/armand-carreras/clone-lastfm/blob/master/music.json').then(data => {
         data.forEach(element =>{
             let song = new Song(element);
             loadSongs(song,ul);
